@@ -1,32 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Data;
-
-import java.sql.Date;
-
-
 /**
  *
- * @author Valentina
+ * @author Kevin
  */
-//Clase barco
 public class Ship {
     private int codeShip;    
-    private Date dateAcquisition;
-    private Date dateOfLastMaintenance;
-    private State state;
+    private String name;
+    private String dateAcquisition;
+    private String dateOfLastMaintenance;
+    private int weight;
+    private int state;
 
-    public Ship(){}
-    public Ship(int codeShip, Date dateAcquisition, Date dateOfLastMaintenance, State state) {
+    public Ship(int codeShip, String name, String dateAcquisition, String dateOfLastMaintenance, int weight, int state) {
         this.codeShip = codeShip;
+        this.name = name;
         this.dateAcquisition = dateAcquisition;
         this.dateOfLastMaintenance = dateOfLastMaintenance;
+        this.weight = weight;
         this.state = state;
     }
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+    
+ public Ship(){}
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     public int getCodeShip() {
         return codeShip;
     }
@@ -35,30 +45,30 @@ public class Ship {
         this.codeShip = codeShip;
     }
 
-    public Date getDateAcquisition() {
+    public String getDateAcquisition() {
         return dateAcquisition;
     }
 
-    public void setDateAcquisition(Date dateAcquisition) {
+    public void setDateAcquisition(String dateAcquisition) {
         this.dateAcquisition = dateAcquisition;
     }
 
-    public Date getDateOfLastMaintenance() {
+    public String getDateOfLastMaintenance() {
         return dateOfLastMaintenance;
     }
 
-    public void setDateOfLastMaintenance(Date dateOfLastMaintenance) {
+    public void setDateOfLastMaintenance(String dateOfLastMaintenance) {
         this.dateOfLastMaintenance = dateOfLastMaintenance;
     }
 
-    public State getState() {
+    public int getState() {
         return state;
     }
 
-    public void setState(State state) {
+    public void setState(int state) {
         this.state = state;
     }
     
     
-    
 }
+

@@ -13,14 +13,12 @@
     </head>
     <body>
         <h1>TIHC</h1>
-        
-        <h1>Crear Tripulaciòn</h1>
-        
-        <a href="CreateCaptain.jsp">Create Captain</a>  <br>  
-        <a href="DeletedCaptain.jsp">Deleted Captain</a>  <br>   
-        <a href="ListCaptain.jsp">List Captain</a>  <br>   
-        <a href="CreateCrewman.jsp">Create Crewman</a>  
-        
+        <h1>Crud's</h1>
+        <a href="Login.jsp">Login</a>  <br>    
+        <a href="CrudCrewman.jsp">Crud Tripulacion</a>  <br>   
+        <a href="CrudCountry.jsp">Crud Country</a>  <br>   
+        <a href="Readship">Crud ship</a><br>   
+        <a href="CrudPort.jsp">Crud port</a> <br>
     </body>
     
 </html>
